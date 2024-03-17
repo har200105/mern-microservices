@@ -10,7 +10,7 @@ import { AppDataSource } from "../config/data-source";
 import { Tenant } from "../entity/Tenant";
 import logger from "../config/logger";
 import authenticate from "../middlewares/authenticate";
-import { isAccessible } from "../middlewares/isAccesible";
+import { isAccessible } from "../middlewares/isAccessible";
 import { Roles } from "../constants";
 import tenantValidator from "../validators/tenant-validator";
 import { CreateTenantRequest } from "../types";

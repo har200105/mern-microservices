@@ -52,7 +52,7 @@ export class UserController {
             return;
         }
 
-        this.logger.debug("Request for updating a user", req.body);
+        this.logger.debug("Request for updating a user =====>", req.body);
 
         try {
             await this.userService.update(Number(userId), {
@@ -95,7 +95,7 @@ export class UserController {
         const userId = req.params.id;
 
         if (isNaN(Number(userId))) {
-            next(createHttpError(400, "Invalid url param."));
+            next(createHttpError(400, "Invalid url params"));
             return;
         }
 

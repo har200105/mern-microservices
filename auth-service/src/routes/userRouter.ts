@@ -1,6 +1,6 @@
 import express, { NextFunction, RequestHandler, Response } from "express";
 import authenticate from "../middlewares/authenticate";
-import { isAccessible } from "../middlewares/isAccesible";
+import { isAccessible } from "../middlewares/isAccessible";
 import { Roles } from "../constants";
 import { UserController } from "../controllers/UserController";
 import { UserService } from "../services/UserService";
