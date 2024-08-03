@@ -64,7 +64,6 @@ export class KafkaBroker implements MessageBroker {
           case "order":
             {
               if (message.value) {
-                // todo: maybe check event_type ?
                 const order = JSON.parse(message.value?.toString());
                 ws.io.to(order.data.tenantId).emit("order-update", order);
               }

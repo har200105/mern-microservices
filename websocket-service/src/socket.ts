@@ -4,7 +4,6 @@ import { Server } from "socket.io";
 
 const wsServer = createServer();
 
-// todo: move origin value to the config.
 const ALLOWED_DOMAINS = [
     "*"
 ];
